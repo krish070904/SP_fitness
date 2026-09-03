@@ -7,6 +7,7 @@ import Testimonials from "@/section/Testimonials";
 import Blog from "@/section/Blog";
 import CTA from "@/components/CTA";
 import Footer from "@/section/Footer";
+import TrainerTransformation from "@/section/trainer&transformation";
 
 export default function Home() {
   return (
@@ -147,6 +148,10 @@ export default function Home() {
 
       {/* ================= PRICING ================= */}
       <Pricing />
+      
+      {/* ================= Trainer&Transformation ================= */}
+      <TrainerTransformation />
+
 
       {/* ================= TESTIMONIALS ================= */}
       <Testimonials />
