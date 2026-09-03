@@ -84,7 +84,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#about"
+                href="/about"
                 className="text-sm font-semibold text-white/60 transition hover:text-lime-300"
               >
                 About Us
@@ -142,7 +142,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-sm font-semibold text-white/60 transition hover:text-lime-300"
               >
                 Contact
@@ -188,7 +188,7 @@ export default function Footer() {
 
             <div className="mt-5 flex flex-col gap-3">
               <Link href="#home" className="text-xs text-white/55 hover:text-lime-300">Home</Link>
-              <Link href="#about" className="text-xs text-white/55 hover:text-lime-300">About Us</Link>
+              <Link href="/about" className="text-xs text-white/55 hover:text-lime-300">About Us</Link>
               <Link href="#services" className="text-xs text-white/55 hover:text-lime-300">Services</Link>
               <Link href="#gallery" className="text-xs text-white/55 hover:text-lime-300">Gallery</Link>
               <Link href="#pricing" className="text-xs text-white/55 hover:text-lime-300">Pricing</Link>
@@ -202,7 +202,7 @@ export default function Footer() {
               <Link href="#testimonials" className="text-xs text-white/55 hover:text-lime-300">Testimonials</Link>
               <Link href="#blog" className="text-xs text-white/55 hover:text-lime-300">Blog</Link>
               <Link href="#pricing" className="text-xs text-white/55 hover:text-lime-300">Join Now</Link>
-              <Link href="#contact" className="text-xs text-white/55 hover:text-lime-300">Contact</Link>
+              <Link href="/contact" className="text-xs text-white/55 hover:text-lime-300">Contact</Link>
             </div>
           </div>
 

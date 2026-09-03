@@ -9,7 +9,7 @@ export default function Navbar() {
   const mobileLinks = [
     { label: "Home", href: "#home" },
     { label: "Service", href: "#service" },
-    { label: "About", href: "#about" },
+    { label: "About", href: "/about" },
     { label: "Gallery", href: "#gallery" },
     { label: "Pages", href: "#pages" },
   ];
@@ -45,14 +45,14 @@ export default function Navbar() {
           </a>
 
           <a
-            href="#about"
+            href="/about"
             className="text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
           >
             About
           </a>
 
           <a
-            href="#gallery"
+            href="/gallery"
             className="text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
           >
             Gallery
@@ -117,7 +117,7 @@ export default function Navbar() {
 
           {/* Contact */}
           <a
-            href="#contact"
+            href="/contact"
             className="flex h-[52px] min-w-[148px] items-center justify-center rounded-full border border-white/70 px-6 text-[15px] font-semibold text-lime-300 transition-all duration-300 hover:border-lime-300 hover:bg-lime-300 hover:text-black"
           >
             Contact Us
@@ -278,7 +278,7 @@ export default function Navbar() {
 
               {/* Mobile Contact Button */}
               <motion.a
-                href="#contact"
+                href="/contact"
                 onClick={() => setMenuOpen(false)}
                 initial={{
                   opacity: 0,

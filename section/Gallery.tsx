@@ -172,7 +172,7 @@ export default function Gallery() {
         <div className="mt-10 flex flex-col items-center sm:mt-12">
           {/* See More */}
           <a
-            href="#contact"
+            href="/gallery"
             className="group inline-flex h-12 items-center gap-3 bg-lime-300 px-7 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
           >
             See More

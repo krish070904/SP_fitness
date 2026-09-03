@@ -290,7 +290,7 @@ export default function About() {
               }`}
             >
               <a
-                href="#contact"
+                href="/about"
                 className="group inline-flex h-12 items-center gap-3 bg-lime-300 px-6 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
               >
                 Read More

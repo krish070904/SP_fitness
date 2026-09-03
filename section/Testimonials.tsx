@@ -82,7 +82,7 @@ export default function Testimonials() {
             </p>
 
             <a
-              href="#contact"
+              href="/contact"
               className="mt-6 inline-flex h-9 items-center rounded-full bg-lime-300 px-5 text-[10px] font-semibold text-black transition-all duration-300 hover:bg-lime-200"
             >
               View All

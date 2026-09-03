@@ -64,7 +64,7 @@ export default function CTA() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="group inline-flex h-12 items-center justify-center gap-3 bg-lime-300 px-7 text-xs font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
                 >
                   Join Now
@@ -74,13 +74,7 @@ export default function CTA() {
                   </span>
                 </a>
 
-                <a
-                  href="#pricing"
-                  className="inline-flex h-12 items-center justify-center border border-white/20 bg-white/[0.02] px-7 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:border-lime-300 hover:text-lime-300"
-                >
-                  View Plans
-                </a>
-
+         
               </div>
 
               {/* Bottom stats */}
