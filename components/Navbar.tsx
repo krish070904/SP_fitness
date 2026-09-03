@@ -114,17 +114,6 @@ export default function Navbar() {
         {/* ================= RIGHT SIDE ================= */}
         <div className="hidden items-center gap-8 md:flex">
 
-          {/* Cart */}
-          <button
-            type="button"
-            className="flex items-center gap-2 text-[15px] font-medium text-white transition-colors hover:text-lime-300"
-          >
-            Cart
-
-            <span className="flex h-[19px] min-w-[19px] items-center justify-center rounded-full bg-white px-1 text-[11px] font-bold text-black">
-              0
-            </span>
-          </button>
 
           {/* Contact */}
           <a
