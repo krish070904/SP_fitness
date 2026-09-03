@@ -7,11 +7,13 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const mobileLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Service", href: "#service" },
+    { label: "Home", href: "/" },
+    { label: "Service", href: "/#service" },
     { label: "About", href: "/about" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Pages", href: "#pages" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Blog", href: "/#blog" },
+    { label: "Testimonials", href: "/#testimonials" },
   ];
 
   return (
@@ -19,7 +21,11 @@ export default function Navbar() {
       <div className="mx-auto flex h-[88px] w-full max-w-[1350px] items-center justify-between px-6 sm:px-8 lg:px-12">
 
         {/* ================= LOGO ================= */}
-        <a href="#home" className="flex items-center">
+        <a
+          href="/"
+          onClick={() => setMenuOpen(false)}
+          className="flex items-center"
+        >
           <img
             src="/logo.png"
             alt="SP Fitness Empire"
@@ -30,30 +36,34 @@ export default function Navbar() {
         {/* ================= DESKTOP NAVIGATION ================= */}
         <div className="hidden items-center gap-8 md:flex lg:gap-9">
 
+          {/* Home */}
           <a
-            href="#home"
-            className="text-[15px] font-medium text-white transition-colors duration-200 hover:text-lime-300"
+            href="/"
+            className="font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white transition-colors duration-200 hover:text-lime-300"
           >
             Home
           </a>
 
+          {/* Service */}
           <a
-            href="#service"
-            className="text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
+            href="/#service"
+            className="font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white/65 transition-colors duration-200 hover:text-lime-300"
           >
             Service
           </a>
 
+          {/* About */}
           <a
             href="/about"
-            className="text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
+            className="font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white/65 transition-colors duration-200 hover:text-lime-300"
           >
             About
           </a>
 
+          {/* Gallery */}
           <a
             href="/gallery"
-            className="text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
+            className="font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white/65 transition-colors duration-200 hover:text-lime-300"
           >
             Gallery
           </a>
@@ -62,7 +72,7 @@ export default function Navbar() {
           <div className="group relative">
             <button
               type="button"
-              className="flex items-center gap-2 text-[15px] font-medium text-white/65 transition-colors duration-200 hover:text-lime-300"
+              className="flex items-center gap-2 font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white/65 transition-colors duration-200 hover:text-lime-300"
             >
               Pages
 
@@ -85,27 +95,30 @@ export default function Navbar() {
             </button>
 
             {/* Dropdown */}
-            <div className="invisible absolute left-1/2 top-full mt-5 w-44 -translate-x-1/2 translate-y-2 rounded-md border border-white/10 bg-[#111416] p-2 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="invisible absolute left-1/2 top-full mt-5 w-48 -translate-x-1/2 translate-y-2 rounded-md border border-white/10 bg-[#111416] p-2 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
 
+              {/* Pricing */}
               <a
-                href="#"
-                className="block rounded px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-lime-300"
-              >
-                Programs
-              </a>
-
-              <a
-                href="#"
-                className="block rounded px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-lime-300"
-              >
-                Trainers
-              </a>
-
-              <a
-                href="#pricing"
-                className="block rounded px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-lime-300"
+                href="/#pricing"
+                className="block rounded px-4 py-3 font-[var(--font-space-grotesk)] text-sm font-semibold text-white/70 transition hover:bg-white/5 hover:text-lime-300"
               >
                 Pricing
+              </a>
+
+              {/* Blog */}
+              <a
+                href="/#blog"
+                className="block rounded px-4 py-3 font-[var(--font-space-grotesk)] text-sm font-semibold text-white/70 transition hover:bg-white/5 hover:text-lime-300"
+              >
+                Blog
+              </a>
+
+              {/* Testimonials */}
+              <a
+                href="/#testimonials"
+                className="block rounded px-4 py-3 font-[var(--font-space-grotesk)] text-sm font-semibold text-white/70 transition hover:bg-white/5 hover:text-lime-300"
+              >
+                Testimonials
               </a>
             </div>
           </div>
@@ -114,11 +127,10 @@ export default function Navbar() {
         {/* ================= RIGHT SIDE ================= */}
         <div className="hidden items-center gap-8 md:flex">
 
-
           {/* Contact */}
           <a
             href="/contact"
-            className="flex h-[52px] min-w-[148px] items-center justify-center rounded-full border border-white/70 px-6 text-[15px] font-semibold text-lime-300 transition-all duration-300 hover:border-lime-300 hover:bg-lime-300 hover:text-black"
+            className="flex h-[52px] min-w-[148px] items-center justify-center rounded-full border border-white/70 px-6 font-[var(--font-space-grotesk)] text-[15px] font-bold text-lime-300 transition-all duration-300 hover:border-lime-300 hover:bg-lime-300 hover:text-black"
           >
             Contact Us
           </a>
@@ -128,7 +140,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="relative z-[60] flex h-11 w-11 items-center justify-center rounded-md border border-white/20 md:hidden"
+          className="relative z-[60] flex h-11 w-11 items-center justify-center rounded-md border border-white/20 lg:hidden"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
         >
@@ -249,7 +261,7 @@ export default function Navbar() {
                       delay: 0.05 + index * 0.06,
                       ease: [0.22, 1, 0.36, 1],
                     }}
-                    className="border-b border-white/10 py-4 text-[15px] font-semibold text-white/80 transition-colors duration-200 hover:text-lime-300"
+                    className="border-b border-white/10 py-4 font-[var(--font-space-grotesk)] text-[15px] font-semibold text-white/80 transition-colors duration-200 hover:text-lime-300"
                   >
                     {link.label}
                   </motion.a>
@@ -274,8 +286,6 @@ export default function Navbar() {
                 className="my-5 h-px origin-left bg-white/10"
               />
 
-        
-
               {/* Mobile Contact Button */}
               <motion.a
                 href="/contact"
@@ -293,7 +303,7 @@ export default function Navbar() {
                   duration: 0.35,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mt-5 flex h-12 w-full items-center justify-center rounded-full border border-lime-300 bg-lime-300 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
+                className="mt-5 flex h-12 w-full items-center justify-center rounded-full border border-lime-300 bg-lime-300 font-[var(--font-space-grotesk)] text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
               >
                 Contact Us
               </motion.a>

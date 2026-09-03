@@ -11,6 +11,7 @@ import Footer from "@/section/Footer";
 export default function Home() {
   return (
     <main className="w-full bg-[#111315]">
+
       {/* ================= HERO ================= */}
       <section
         id="home"
@@ -35,8 +36,10 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex min-h-screen items-start">
-          <div className="mx-auto w-full max-w-7xl px-6 pt-58 sm:px-10 sm:pt-32 lg:px-16 lg:pt-36">
+          <div className="mx-auto w-full max-w-7xl px-6 pt-28 sm:px-10 sm:pt-32 lg:px-16 lg:pt-52">
+
             <div className="max-w-2xl">
+
               {/* Label */}
               <p className="mb-4 text-xs font-medium uppercase tracking-[0.3em] text-lime-300 sm:text-sm">
                 Train. Focus. Transform.
@@ -57,26 +60,38 @@ export default function Home() {
 
               {/* Buttons */}
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                {/* Join Now */}
-                <button className="group flex h-12 items-center justify-center gap-2 bg-lime-300 px-6 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200">
-                  Join Now
-                  <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </button>
 
-                {/* Explore Training */}
-                <button className="h-12 border border-white/40 bg-white/5 px-6 text-sm font-bold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:border-lime-300 hover:text-lime-300">
-                  Explore Training
-                </button>
+                {/* ================= JOIN NOW ================= */}
+<a
+  href="/contact"
+  className="group flex h-12 items-center justify-center gap-2 bg-lime-300 px-6 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200"
+>
+  Join Now
+
+  <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</a>
+
+{/* ================= EXPLORE TRAINING ================= */}
+<a
+  href="#pricing"
+  className="flex h-12 items-center justify-center border border-white/40 bg-white/5 px-6 text-sm font-bold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:border-lime-300 hover:text-lime-300"
+>
+  Explore Training
+</a>
+
               </div>
             </div>
 
-            {/* Features */}
+            {/* ================= FEATURES ================= */}
             <div className="mt-12 grid max-w-2xl grid-cols-2 gap-5 border-t border-white/20 pt-5 sm:grid-cols-4">
+
               {/* Strength */}
               <div>
-                <p className="text-xl font-bold text-lime-300">01</p>
+                <p className="text-xl font-bold text-lime-300">
+                  01
+                </p>
 
                 <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
                   Strength
@@ -85,7 +100,9 @@ export default function Home() {
 
               {/* Cardio */}
               <div>
-                <p className="text-xl font-bold text-lime-300">02</p>
+                <p className="text-xl font-bold text-lime-300">
+                  02
+                </p>
 
                 <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
                   Cardio
@@ -94,7 +111,9 @@ export default function Home() {
 
               {/* Muscle */}
               <div>
-                <p className="text-xl font-bold text-lime-300">03</p>
+                <p className="text-xl font-bold text-lime-300">
+                  03
+                </p>
 
                 <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
                   Muscle
@@ -103,12 +122,15 @@ export default function Home() {
 
               {/* Results */}
               <div>
-                <p className="text-xl font-bold text-lime-300">04</p>
+                <p className="text-xl font-bold text-lime-300">
+                  04
+                </p>
 
                 <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
                   Results
                 </p>
               </div>
+
             </div>
           </div>
         </div>
@@ -116,13 +138,28 @@ export default function Home() {
 
       {/* ================= ABOUT ================= */}
       <About />
+
+      {/* ================= SERVICES ================= */}
       <Services />
+
+      {/* ================= GALLERY ================= */}
       <Gallery />
+
+      {/* ================= PRICING ================= */}
       <Pricing />
+
+      {/* ================= TESTIMONIALS ================= */}
       <Testimonials />
+
+      {/* ================= BLOG ================= */}
       <Blog />
+
+      {/* ================= CTA ================= */}
       <CTA />
+
+      {/* ================= FOOTER ================= */}
       <Footer />
+
     </main>
   );
 }
