@@ -285,29 +285,7 @@ export default function Navbar() {
                 className="my-5 h-px origin-left bg-white/10"
               />
 
-              {/* Mobile Cart */}
-              <motion.button
-                type="button"
-                initial={{
-                  opacity: 0,
-                  y: 15,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  delay: 0.38,
-                  duration: 0.3,
-                }}
-                className="flex items-center gap-2 text-[15px] font-semibold text-white"
-              >
-                Cart
-
-                <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-white px-1 text-[11px] font-bold text-black">
-                  0
-                </span>
-              </motion.button>
+        
 
               {/* Mobile Contact Button */}
               <motion.a
