@@ -8,6 +8,7 @@ import Blog from "@/section/Blog";
 import CTA from "@/components/CTA";
 import Footer from "@/section/Footer";
 import TrainerTransformation from "@/section/trainer&transformation";
+import ContactSection from "@/section/ContactSection";
 
 export default function Home() {
   return (
@@ -158,6 +159,10 @@ export default function Home() {
 
       {/* ================= BLOG ================= */}
       <Blog />
+      
+      {/* ================= BLOG ================= */}
+      <ContactSection />
+      
 
       {/* ================= CTA ================= */}
       <CTA />

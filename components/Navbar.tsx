@@ -17,7 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute left-0 top-0 z-50 w-full border-b border-white/5 bg-[#0b0d0f]">
+    <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0b0d0f]/75 shadow-[0_8px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto flex h-[88px] w-full max-w-[1350px] items-center justify-between px-6 sm:px-8 lg:px-12">
 
         {/* ================= LOGO ================= */}
@@ -95,7 +95,7 @@ export default function Navbar() {
             </button>
 
             {/* Dropdown */}
-            <div className="invisible absolute left-1/2 top-full mt-5 w-48 -translate-x-1/2 translate-y-2 rounded-md border border-white/10 bg-[#111416] p-2 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="invisible absolute left-1/2 top-full mt-5 w-48 -translate-x-1/2 translate-y-2 rounded-xl border border-white/10 bg-[#111416]/80 p-2 opacity-0 shadow-2xl backdrop-blur-xl backdrop-saturate-150 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
 
               {/* Pricing */}
               <a
@@ -232,7 +232,7 @@ export default function Navbar() {
               duration: 0.35,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="overflow-hidden border-t border-white/10 bg-[#0b0d0f] md:hidden"
+            className="overflow-hidden border-t border-white/10 bg-[#0b0d0f]/90 backdrop-blur-xl backdrop-saturate-150 md:hidden"
           >
             <div className="px-6 pb-7 pt-5 sm:px-8">
 

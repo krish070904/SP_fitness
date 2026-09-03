@@ -83,12 +83,7 @@ export default function Blog() {
                 </span>
               </div>
 
-              {/* Label */}
-              <div className="absolute left-5 top-5 sm:left-7 sm:top-7">
-                <span className="border border-white/20 bg-black/50 px-3 py-2 font-[var(--font-space-grotesk)] text-[9px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-md">
-                  Training Environment
-                </span>
-              </div>
+            
 
               {/* Bottom text */}
               <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
@@ -131,12 +126,7 @@ export default function Blog() {
                 </span>
               </div>
 
-              {/* Label */}
-              <div className="absolute left-5 top-5 sm:left-7 sm:top-7">
-                <span className="border border-white/20 bg-black/50 px-3 py-2 font-[var(--font-space-grotesk)] text-[9px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-md">
-                  SP Fitness Experience
-                </span>
-              </div>
+     
 
               {/* Bottom text */}
               <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
