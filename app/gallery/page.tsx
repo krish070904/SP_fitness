@@ -52,13 +52,23 @@ const galleryImages = [
   },
   {
     src: "/BG.png",
-    title: "SP Fitness",
+    title: "The SP Fitness Experience",
     category: "Experience",
   },
   {
     src: "/about.png",
     title: "More Than A Gym",
     category: "Our Story",
+  },
+  {
+    src: "/transformation1.png",
+    title: "Transformation Journey",
+    category: "Transformation",
+  },
+  {
+    src: "/tranfromation.png",
+    title: "Real Results",
+    category: "Transformation",
   },
 ];
 
@@ -72,7 +82,6 @@ export default function GalleryPage() {
 
       <section className="relative overflow-hidden bg-[#080a0b]">
 
-        {/* Background */}
         <div className="absolute inset-0">
           <img
             src="/BG.png"
@@ -83,7 +92,6 @@ export default function GalleryPage() {
           <div className="absolute inset-0 bg-[#080a0b]/80" />
         </div>
 
-        {/* Glow */}
         <div className="pointer-events-none absolute left-[10%] top-[15%] h-[450px] w-[450px] rounded-full bg-lime-300/[0.04] blur-[130px]" />
 
         <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-32 sm:px-10 sm:pb-20 sm:pt-36 lg:px-16 lg:pb-20 lg:pt-40">
@@ -111,8 +119,8 @@ export default function GalleryPage() {
 
             <p className="mt-7 max-w-xl text-sm leading-6 text-white/50 sm:text-base sm:leading-7">
               Step inside SP Fitness and experience the environment,
-              equipment, trainers, and community built to help you become
-              stronger every day.
+              equipment, trainers, transformations, and community built to
+              help you become stronger every day.
             </p>
           </motion.div>
 
@@ -124,6 +132,7 @@ export default function GalleryPage() {
       {/* ===================================================== */}
 
       <section className="relative bg-[#080a0b]">
+
         <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-8 sm:pb-24 lg:px-16 lg:pb-28">
 
           <div className="mb-8 flex items-end justify-between sm:mb-10">
@@ -211,8 +220,8 @@ export default function GalleryPage() {
             </div>
 
             <p className="max-w-sm text-sm leading-6 text-white/40">
-              From our training floor to our community, every part of SP
-              Fitness is built around progress.
+              From our training floor to real member transformations, every
+              part of SP Fitness is built around progress.
             </p>
           </motion.div>
 
@@ -222,7 +231,7 @@ export default function GalleryPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
 
-            {/* 01 - TRAINER */}
+            {/* 01 */}
             <GalleryCard
               image="/trainer.jpeg"
               title="Our Trainers"
@@ -232,7 +241,7 @@ export default function GalleryPage() {
               delay={0}
             />
 
-            {/* 02 - GYM 2 JPEG */}
+            {/* 02 */}
             <GalleryCard
               image="/gym2.jpeg"
               title="Training Experience"
@@ -242,7 +251,7 @@ export default function GalleryPage() {
               delay={0.05}
             />
 
-            {/* 03 - GYM 2 PNG */}
+            {/* 03 */}
             <GalleryCard
               image="/gym2.png"
               title="Training Floor"
@@ -252,7 +261,7 @@ export default function GalleryPage() {
               delay={0.1}
             />
 
-            {/* 04 - GYM 3 */}
+            {/* 04 */}
             <GalleryCard
               image="/gym3.png"
               title="Performance Zone"
@@ -262,7 +271,7 @@ export default function GalleryPage() {
               delay={0.15}
             />
 
-            {/* 05 - GYM 4 */}
+            {/* 05 */}
             <GalleryCard
               image="/gym4.png"
               title="Workout Area"
@@ -272,7 +281,7 @@ export default function GalleryPage() {
               delay={0.2}
             />
 
-            {/* 06 - GYM 5 */}
+            {/* 06 */}
             <GalleryCard
               image="/gym5.png"
               title="SP Fitness Community"
@@ -282,7 +291,7 @@ export default function GalleryPage() {
               delay={0.25}
             />
 
-            {/* 07 - BLOG 1 */}
+            {/* 07 */}
             <GalleryCard
               image="/blog1.png"
               title="Train With Purpose"
@@ -292,7 +301,7 @@ export default function GalleryPage() {
               delay={0.3}
             />
 
-            {/* 08 - BLOG 2 */}
+            {/* 08 */}
             <GalleryCard
               image="/blog2.png"
               title="Nutrition & Results"
@@ -302,7 +311,7 @@ export default function GalleryPage() {
               delay={0.35}
             />
 
-            {/* 09 - BLOG 3 */}
+            {/* 09 */}
             <GalleryCard
               image="/blog3.png"
               title="Consistency Matters"
@@ -312,7 +321,7 @@ export default function GalleryPage() {
               delay={0.4}
             />
 
-            {/* 10 - BG */}
+            {/* 10 */}
             <GalleryCard
               image="/BG.png"
               title="The SP Fitness Experience"
@@ -322,7 +331,7 @@ export default function GalleryPage() {
               delay={0.45}
             />
 
-            {/* 11 - ABOUT */}
+            {/* 11 */}
             <GalleryCard
               image="/about.png"
               title="More Than A Gym"
@@ -330,6 +339,32 @@ export default function GalleryPage() {
               className="sm:col-span-2 lg:col-span-5"
               aspect="aspect-[4/5]"
               delay={0.5}
+            />
+
+            {/* ================================================= */}
+            {/* 12 - TRANSFORMATION 1 */}
+            {/* ================================================= */}
+
+            <GalleryCard
+              image="/transformation1.png"
+              title="Transformation Journey"
+              category="Transformation"
+              className="sm:col-span-2 lg:col-span-7"
+              aspect="aspect-[16/10]"
+              delay={0.55}
+            />
+
+            {/* ================================================= */}
+            {/* 13 - TRANSFORMATION 2 */}
+            {/* ================================================= */}
+
+            <GalleryCard
+              image="/tranfromation.png"
+              title="Real Results"
+              category="Transformation"
+              className="sm:col-span-2 lg:col-span-5"
+              aspect="aspect-[4/5]"
+              delay={0.6}
             />
 
           </div>
@@ -403,7 +438,7 @@ function GalleryCard({
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
-      {/* Lime border */}
+      {/* Border */}
       <div className="pointer-events-none absolute inset-0 border border-white/10 transition-colors duration-500 group-hover:border-lime-300/50" />
 
       {/* Content */}
@@ -426,6 +461,7 @@ function GalleryCard({
         </div>
 
       </div>
+
     </motion.div>
   );
 }
