@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const plans = [
   {
@@ -157,19 +158,20 @@ export default function Pricing() {
               </div>
 
               {/* CTA */}
-              <button
-                className={`group/button mt-8 flex h-12 w-full items-center justify-center gap-3 text-xs font-bold uppercase tracking-wide transition-all duration-300 ${
-                  plan.popular
-                    ? "bg-lime-300 text-black hover:bg-lime-200"
-                    : "border border-white/20 bg-transparent text-white hover:border-lime-300 hover:text-lime-300"
-                }`}
-              >
-                {plan.button}
+              <Link
+  href="/contact"
+  className={`group/button mt-8 flex h-12 w-full items-center justify-center gap-3 text-xs font-bold uppercase tracking-wide transition-all duration-300 ${
+    plan.popular
+      ? "bg-lime-300 text-black hover:bg-lime-200"
+      : "border border-white/20 bg-transparent text-white hover:border-lime-300 hover:text-lime-300"
+  }`}
+>
+  {plan.button}
 
-                <span className="text-base transition-transform duration-300 group-hover/button:translate-x-1">
-                  →
-                </span>
-              </button>
+  <span className="text-base transition-transform duration-300 group-hover/button:translate-x-1">
+    →
+  </span>
+</Link>
 
               {/* Divider */}
               <div className="my-8 h-px bg-white/[0.08]" />
