@@ -1,69 +1,128 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import About from "@/section/About";
+import Services from "@/section/Services";
+import Gallery from "@/section/Gallery";
+import Pricing from "@/section/Pricing";
+import Testimonials from "@/section/Testimonials";
+import Blog from "@/section/Blog";
+import CTA from "@/components/CTA";
+import Footer from "@/section/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="w-full bg-[#111315]">
+      {/* ================= HERO ================= */}
+      <section
+        id="home"
+        className="relative min-h-screen w-full overflow-hidden bg-black"
+      >
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/BG.png')",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/45" />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/35 to-black/20" />
+
+        {/* Navbar */}
+        <Navbar />
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex min-h-screen items-start">
+          <div className="mx-auto w-full max-w-7xl px-6 pt-58 sm:px-10 sm:pt-32 lg:px-16 lg:pt-36">
+            <div className="max-w-2xl">
+              {/* Label */}
+              <p className="mb-4 text-xs font-medium uppercase tracking-[0.3em] text-lime-300 sm:text-sm">
+                Train. Focus. Transform.
+              </p>
+
+              {/* Heading */}
+              <h1 className="text-4xl font-black uppercase leading-[0.9] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                Stronger
+                <br />
+                <span className="text-lime-300">Everyday.</span>
+              </h1>
+
+              {/* Description */}
+              <p className="mt-5 max-w-lg text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
+                Push your limits, build your strength, and become the strongest
+                version of yourself.
+              </p>
+
+              {/* Buttons */}
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                {/* Join Now */}
+                <button className="group flex h-12 items-center justify-center gap-2 bg-lime-300 px-6 text-sm font-bold uppercase tracking-wide text-black transition-all duration-300 hover:bg-lime-200">
+                  Join Now
+                  <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </button>
+
+                {/* Explore Training */}
+                <button className="h-12 border border-white/40 bg-white/5 px-6 text-sm font-bold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:border-lime-300 hover:text-lime-300">
+                  Explore Training
+                </button>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div className="mt-12 grid max-w-2xl grid-cols-2 gap-5 border-t border-white/20 pt-5 sm:grid-cols-4">
+              {/* Strength */}
+              <div>
+                <p className="text-xl font-bold text-lime-300">01</p>
+
+                <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
+                  Strength
+                </p>
+              </div>
+
+              {/* Cardio */}
+              <div>
+                <p className="text-xl font-bold text-lime-300">02</p>
+
+                <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
+                  Cardio
+                </p>
+              </div>
+
+              {/* Muscle */}
+              <div>
+                <p className="text-xl font-bold text-lime-300">03</p>
+
+                <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
+                  Muscle
+                </p>
+              </div>
+
+              {/* Results */}
+              <div>
+                <p className="text-xl font-bold text-lime-300">04</p>
+
+                <p className="mt-1 text-[10px] uppercase tracking-wider text-white/60 sm:text-xs">
+                  Results
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ================= ABOUT ================= */}
+      <About />
+      <Services />
+      <Gallery />
+      <Pricing />
+      <Testimonials />
+      <Blog />
+      <CTA />
+      <Footer />
+    </main>
   );
 }

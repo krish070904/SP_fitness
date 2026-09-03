@@ -24,3 +24,113 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* =========================================================
+   SP FITNESS EMPIRE
+   ABOUT SECTION — SCROLL RIBBON
+========================================================= */
+
+/* =========================================================
+   ABOUT SECTION — SCROLL CONTROLLED RIBBON
+========================================================= */
+
+.about-ribbon {
+  will-change: stroke-dashoffset;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .about-ribbon {
+    transition: none;
+  }
+}
+.about-ribbon-glow {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation: aboutRibbonGlow 5s linear infinite;
+
+  will-change: stroke-dashoffset;
+}
+
+/* Subtle movement after the ribbon emerges */
+@keyframes aboutRibbonFlow {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(12px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes aboutRibbonGlow {
+  0% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 0.65;
+  }
+
+  100% {
+    opacity: 0.35;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-ribbon,
+  .about-ribbon-glow {
+    animation: none;
+  }
+}
+
+/* =========================================
+   GLOBAL SMOOTH SCROLL
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Better text rendering */
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Respect users who disable animations */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+/* =========================================
+   SMOOTH SCROLL EXPERIENCE
+========================================= */
+
+* {
+  scroll-behavior: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  overflow-x: hidden;
+}
