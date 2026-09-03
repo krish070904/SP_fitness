@@ -111,15 +111,6 @@ export default function Testimonials() {
                 stronger every day at SP Fitness.
               </p>
 
-              <a
-                href="/contact"
-                className="mt-6 inline-flex h-11 items-center justify-center border border-lime-300 bg-lime-300 px-6 font-[var(--font-space-grotesk)] text-[10px] font-black uppercase tracking-[0.12em] text-black transition-all duration-300 hover:bg-transparent hover:text-lime-300"
-              >
-                Start Your Journey
-                <span className="ml-3 text-base">
-                  →
-                </span>
-              </a>
             </motion.div>
 
           </div>
